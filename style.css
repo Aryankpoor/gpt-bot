@@ -22,6 +22,7 @@ a:hover {
 
 .img2 {
   margin-top: 100px;
+  margin-left: 100px;
   width: 450px;
   height: 450px;
   transition-duration: 350ms;
@@ -43,12 +44,12 @@ a:hover {
   font-size: 30px;
 }
  
-
+ 
 .h3A {
   font-family: 'Robot Mono', monospace;
   font-size: 60px;
   padding: 20px;
-  color: #2ECC71;
+  color: #00ffe7;
   float: right;
   margin-right: 100px;
 }
@@ -158,12 +159,12 @@ main {
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 24px;
-  color: #eeeeee;
-  margin: 10px 0 0 0;
+.h1 {
+  font-size: 100px;
+  color: #000000;
+  margin-top: 500px;
+  margin-left: 100px;
   font-family: Calibri;
-  text-transform: uppercase;
 }
 
 .span1 {
