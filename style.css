@@ -5,7 +5,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(39, 138, 219));
+  background-color: #cabbe9;
+  border-radius: 1%;
   min-height: 100%;
 }
 
@@ -15,3 +16,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   margin-left: 20px;
 }
 
+body {
+  background-color: #fccde2;
+}
+
+a:hover {
+  color: #ffa45c;
+  font-family: consolas;
+}
