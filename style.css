@@ -1,0 +1,267 @@
+﻿
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cabbe9;
+  border-radius: 1%;
+  min-height: 100%;
+}
+
+.image {
+  width: 80px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+body {
+  background-color: #fccde2;
+}
+
+a:hover {
+  color: #ffa45c;
+  font-family: consolas;
+}
+
+i {
+  margin-right: 40px;
+  
+}
+
+#fcc:hover {
+  color: green;
+  
+}
+
+#ig:hover {
+  color: pink;
+  
+}
+
+#gh:hover {
+  color: white;;
+  
+}
+
+#cp:hover {
+  color: black;
+  
+}
+
+
+$blue: #54c1fb;
+$light-blue: #f2f9ff;
+$purple: #6d71f9;
+$dark-blue: #4e4f5c;
+$gray: #eff0f8;
+$white: #ffffff;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f6f6f9;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px);
+}
+
+.container {
+  max-width: 400px;
+  border: 1px solid $gray;
+  padding-bottom: 0;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px 0 rgba(204, 204, 204, 0.1);
+}
+
+.form-title {
+  border-bottom: 1px solid $gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $dark-blue;
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 100%;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    .left,
+    .right {
+      width: 2px;
+      height: 13px;
+      background: lighten($dark-blue, 30%);
+      position: absolute;
+    }
+    .left {
+      transform: rotate(-45deg);
+    }
+
+    .right {
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      background: $purple;
+      .left,
+      .right {
+        background: white;
+      }
+    }
+  }
+}
+
+.form-title,
+.form,
+.form-message {
+  padding: 0 30px;
+}
+
+.form-title {
+  padding-top: 5px;
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input {
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  font-weight: 500;
+  color: $dark-blue;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  caret-color: $purple;
+
+  &:focus {
+    border-color: $purple;
+  }
+}
+
+.label {
+  color: $dark-blue;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.form-message {
+  border-bottom: 1px solid $gray;
+}
+
+.message {
+  background: lighten($blue, 30%);
+  padding: 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  border: 1px solid #b7e0f6;
+  .icon {
+    font-size: 13px;
+    color: #00a6ff;
+    margin-right: 14px;
+  }
+  p {
+    font-size: 11px;
+    color: #00a6ff;
+    margin: 0;
+  }
+}
+
+.form-controls {
+  // border-top: 1px solid $gray;
+  padding: 20px 0;
+  padding-top: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .btn {
+    flex-basis: 30%;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .submit {
+    background: $purple;
+    color: $white;
+    border: none;
+    // box-shadow: 3px 5px 40px lighten($purple, 17%);
+  }
+
+  .cancel {
+    color: $dark-blue;
+    border: 1px solid #dcdcdc;
+  }
+}
+
+@media (max-width: 400px) {
+  #app {
+    height: auto;
+    padding: 20px;
+  }
+  .container {
+    max-width: 330px;
+  }
+}
+
+@media (max-width: 250px) {
+  #app {
+    display: block;
+    padding: 5px;
+  }
+
+  .container {
+    border-radius: 10px;
+  }
+
+  .form-title {
+    .close {
+      display: none;
+    }
+  }
+}
+
+/*Special thanks to sasha tran for providing such a good looking form on codepen*/
