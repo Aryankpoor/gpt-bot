@@ -1,3 +1,3 @@
-# Portfolio site
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)<br>
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+I dont use this site anymore and in the coming days I am closing it anyway so you can view the site if you want right now, however my portfolio site is available [here](https://kapoor-aryan.netlify.app)
+
+also view my ecommerce site [vorizon](https://vorizon.netlify.app)
