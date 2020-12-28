@@ -1,3 +1,5 @@
-This site is not in use anymore and in the coming days I am closing it anyway , however my portfolio site is available [here](https://kapoor-aryan.netlify.app)
+This will be my new portfolio site with a totally new cover up and a lot of 3d designs.
 
-also view my ecommerce site [vorizon](https://vorizon.netlify.app)
+This site is still a work in progress till then you can view my [portfolio](https://github.com/Aryankpoor/Kapoor-aryan)
+
+and my [e-commerce site](https://vorizon.netlify.app)
