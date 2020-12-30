@@ -1,6 +1,7 @@
-/*import fonts.css*/
+/*import fonts.css and _variables.css*/
 
 @import url(./fonts.css);
+@import url(./partials/_variables.css);
 
 
 /*Navigation Bar start*/
@@ -14,13 +15,17 @@
     padding: 1rem 20rem
 }
 
-.header_area .main-menu .nav-item .nav-link{
-    font-family: "Roboto",cursive;
+.header_area.main-menu.nav-item.nav-link{
+    font-family: var(--roboto);
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.7rem;
-    color: black;
+    color: var(--title-color);
 }
 
+.header_area.main-menu.navbar-nav.active a{
+    background: var(--gradient-color);
+    -webkit-text-fill-color: transparent;
+}
 /*navbar end*/
 
