@@ -344,5 +344,11 @@ footer.footer-area .social a:hover > i{
     color: var(--primary-color);
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
 
+#mail {
+    color: white;
+}
 /* End Footer */ 
