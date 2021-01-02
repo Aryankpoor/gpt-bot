@@ -351,4 +351,11 @@ html, body {
 #mail {
     color: white;
 }
+
+.logos
+{
+    width: 300px;
+    height: 120px;;
+    margin-bottom: 40px;
+}
 /* End Footer */ 
