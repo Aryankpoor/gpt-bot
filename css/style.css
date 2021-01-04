@@ -348,15 +348,12 @@ html, body {
     scroll-behavior: smooth;
 }
 
-#mail {
+#mail-para {
     color: white;
 }
 
 
-#exp
-{
-    margin-bottom: 0;
-}
+
 
 ::-webkit-scrollbar
 {
