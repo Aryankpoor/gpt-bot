@@ -348,10 +348,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
-#send-me-a-mail {
-    color: white;
+#contact a{
+    color: burlywood;
+    
 }
-
 
 
 
