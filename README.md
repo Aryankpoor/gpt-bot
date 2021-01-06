@@ -1,3 +1,3 @@
-This will be my new portfolio site with a totally new cover up.
+# Welcome to my new Portfolio
 
-The site has been finished but due to some reason , github pages is not working correctly and so the site is hosted using netlify
+### I created this new portfolio because I thought my original portfolio started looking dull now in comparison to my skills. The portfolio has been created from @Akashyap123 's repo. - Portfolio Website
