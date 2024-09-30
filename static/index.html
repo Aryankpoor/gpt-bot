@@ -4,28 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mirror</title>
-
-    <script>
-      async function onSubmit(prompt) {
-        const response = await fetch('/', {
-          method: 'POST',
-          body: JSON.stringify({ prompt }),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        });
-
-        const json = await response.json();
-
-        if (!json.ok || json.error) {
-          alert(json.error);
-        }
-
-        return json.completion;
-      }
-    </script>
-
+    <title>MetaMorpheus</title>
     <script src="//unpkg.com/alpinejs" defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
