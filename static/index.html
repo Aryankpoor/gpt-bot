@@ -4,28 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MetaMorpheus</title>
+    <title>Prompt ChatGPT demo</title>
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script>
+      async function onSubmit(prompt) {
+        const response = await fetch('/', {
+          method: 'POST',
+          body: JSON.stringify({ prompt }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
+
+        const json = await response.json();
+
+        if (!json.ok || json.error) {
+          alert(json.error);
+        }
+
+        return json.completion;
+      }
+    </script>
+
     <script src="//unpkg.com/alpinejs" defer></script>
 
     <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink" />
     <link rel="stylesheet" href="https://unpkg.com/@appwrite.io/pink-icons" />
   </head>
   <body class="dark">
-    <main class="main-content">
+    <main class="main">
       <div class="top-cover pb-14">
         <div class="container">
           <div
             class="flex gap-4 justify-center mt-4"
           >
-            <h1 class="heading-level-1">Prompt ChatGPT demo</h1>
+          <div class="nav">
+            <p>METAMORPHEUS - VIRTUAL ASSISTANT</p>
+            <a href="https://github.com/Aryankpoor/metamorpheus" target="_blank"><img src={assets.github_icon} alt="" /></a>
+          </div>
             <code class="u-un-break-text"></code>
           </div>
           <p
             class="body-text-1 u-normal mt-2"
             style="max-width: 50rem"
           >
-            Use this page to test your implementation with OpenAI GPT-4o API. Enter
-            text and receive the model output as a response.
+          <div className="main-container">
+
+          
+               <div className="greet"> 
+                <p><span>Hello, Traveller</span></p>
+                <p>Ask me Anything</p>
+            </div> <div className="cards">
+                <div className="card">
+                    <p><b>DID YOU KNOW? Metamorpheus currently uses Gemini API. Type who are you and see what happens!</b></p>
+                    <img src="../assets/message_icon.png" alt="" />
+                </div>
+                <div className="card">
+                    <p><b>TIP FOR USE: <br />Pressing enter key won't work. Click the send icon to ask your question.</b></p>
+                    <img src="../assets/message_icon.png" alt="" />
+                </div>
+                <div className="card">
+                    <p><b>FUN FACT: Metamorphosis was developed in just 3 days. There are still some bugs but we are working on it.</b></p>
+                    <img src="../assets/message_icon.png" alt="" />
+                </div>
+                <div className="card">
+                    <p><b>USAGE INFORMATION: Response time of metamorphosis depends upon the complexity of the prompt and the server side computing power.</b></p>
+                    <img src="../assets/message_icon.png" alt="" />
+                </div>
+            </div>
           </p>
         </div>
       </div>
@@ -56,11 +103,27 @@
                 <div class="flex gap-3">
                   <h5 class="eyebrow-heading-2">ChatGPT:</h5>
                 </div>
-
-                <div style="overflow-x: hidden; line-break: anywhere; white-space: pre-line;">
-                  <p class="u-color-text-gray" x-text="answer"></p>
+                <div className='result'>
+                  <div className="result-title result-data">
+                      <img src="../assets/gemini_icon.png" alt="" className='response-img' />
+                      <div style="overflow-x: hidden; line-break: anywhere; white-space: pre-line;">
+                        <p class="u-color-text-gray" x-text="answer"></p>
+                      </div>
+                  </div>
+                  <div className="main-bottom">
+                    <div className="search-box">
+                        
+                        <input className='input' type="text" onChange={(e)=>setInput(e.target.value)} value={input} placeholder="write Clear prompt to see what happens"
+                         />
+                         
+                        <div>
+                          <img src="../assets/send_icon.png" />
+                        </div>
+                    </div>
+                    <p className="bottom-info">
+                    MetaMorpheus may display inaccurate info, including about people. Please double check it's responses.</p>
                 </div>
-              </div>
+            </div>
             </div>
           </template>
         </div>
