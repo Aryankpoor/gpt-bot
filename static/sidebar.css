@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #AB4900;
+    padding: 25px 15px;
+}
+
+.sidebar img{
+    width: 20px;
+}
+
+.sidebar .menu {
+    display:block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    
+}
+
+.sidebar .top .new-chat {
+    background-color: #078C90;
+}
+
+.sidebar .new-chat p {
+    font-family: "Slackey", sans-serif;
+    color: white;
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'slackey', sans-serif;
+    font-weight: 1000;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry p b{
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #282828;
+}
+
+.sidebar .recent-entry p b:hover{
+    color: #282828;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}   
+
+.sidebar .bottom .bottom-item p{
+    font-family: "Slackey", sans-serif;
+}
+
+.sidebar .bottom .bottom-item button{
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 126px;
+    padding-top: 1px;
+    border: none;
+    color: #282828;
+}
+
+.side-links {
+    text-decoration: none;
+    color: #282828;
+}
+
+@media (max-width:600px){
+    .sidebar {
+        display: none;  
+    }
+}
